@@ -28,6 +28,6 @@ router.post(
 
 router.get('/logout', auth, logoutUser);
 
-router.get('/renewtoken', auth, renewToken);
+router.get('/renew', auth, renewToken);
 
 export { router as AuthRouter };
