@@ -1,6 +1,13 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import { config } from 'dotenv';
 import cors from 'cors';
+
+import { Router } from './routes/index.router';
+import {
+  boomErrorHandler,
+  errorHandler,
+  validationErrorHandler,
+} from './middlewares';
 
 const app = express();
 
@@ -10,9 +17,11 @@ app.use(cors());
 
 const port = process.env.PORT || 3030;
 
-app.get('/', (_req: Request, res: Response) => {
-  res.send('Hello World!');
-});
+Router(app);
+
+app.use(validationErrorHandler);
+app.use(boomErrorHandler);
+app.use(errorHandler);
 
 app.listen(port, () => {
   console.log(`[🧪]: Server is running at port: ${port}`);
