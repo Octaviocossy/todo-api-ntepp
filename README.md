@@ -1,1 +1,6 @@
-# Node - TypeScript - Express - Postgres - Prisma 💾
+# NTEPP 💾
+- Node
+- TypeScript
+- Express
+- Postgres
+- Prisma
