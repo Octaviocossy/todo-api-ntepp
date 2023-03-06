@@ -26,4 +26,4 @@
 | Method     | Endpoint                        | Description                 | Auth (JWT) | Body                                            |
 |------------|---------------------------------|-----------------------------|------------|-------------------------------------------------|
 | POST       | `/api/v1/user/updateInfo`       | Update user info.           | ✔          | { "username": "", "email": "" }                 |
-| POST       | `/api/v1/user/changepassword`   | Update password.            | ✔          | { "password": "", "newPassword": "" }           |
+| POST       | `/api/v1/user/changePassword`   | Update password.            | ✔          | { "password": "", "newPassword": "" }           |
