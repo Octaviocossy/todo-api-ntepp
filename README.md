@@ -22,7 +22,7 @@
 | PUT        | `/api/v1/tasks/update/:id`      | Edit an existing task.      | ✔          | { "title": "", "description": "", "completed": true }  |
 | DELETE     | `/api/v1/tasks/delete/:id`      | Delete an existing task.    | ✔          | -                                                      |
 
-### User 🧔 (In progress)
+### User 🧔
 | Method     | Endpoint                        | Description                 | Auth (JWT) | Body                                            |
 |------------|---------------------------------|-----------------------------|------------|-------------------------------------------------|
 | POST       | `/api/v1/user/updateInfo`       | Update user info.           | ✔          | { "username": "", "email": "" }                 |
