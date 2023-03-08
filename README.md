@@ -14,7 +14,7 @@
 | GET        | `/api/v1/auth/renew`            | Auth by JWT.                | ✔          | -                                               |
 | GET        | `/api/v1/auth/logout`           | Logout account.             | ✔          | -                                               |
 
-### Tasks 📃 (In progress)
+### Tasks 📃
 | Method     | Endpoint                        | Description                 | Auth (JWT) | Body                                                   |
 |------------|---------------------------------|-----------------------------|------------|--------------------------------------------------------|
 | GET        | `/api/v1/tasks/get`             | Get tasks.                  | ✔          | -                                                      |

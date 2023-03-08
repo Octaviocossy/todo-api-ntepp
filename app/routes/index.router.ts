@@ -1,6 +1,7 @@
 import express, { Express } from 'express';
 
 import { AuthRouter } from './auth.router';
+import { TaskRouter } from './tasks.router';
 import { UserRouter } from './user.router';
 
 export const Router = (app: Express) => {
@@ -10,4 +11,5 @@ export const Router = (app: Express) => {
 
   router.use('/auth', AuthRouter);
   router.use('/user', UserRouter);
+  router.use('/tasks', TaskRouter);
 };
